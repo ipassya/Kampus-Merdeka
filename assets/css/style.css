@@ -1,0 +1,186 @@
+.validation{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
+
+.wrapper-scan {
+	padding: 100px;
+}
+
+
+.head-title {
+	color: #2E539C;
+	text-decoration-style: double;
+}
+
+
+/* SCAN */
+
+.detail-scan-bg {
+	background: transparent linear-gradient(112deg, #19E7DA 0%, #6078EA 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 16px 20px #3EACE266;
+}
+
+.detail-scan img {
+	width: 200px;
+	padding: 30px;
+}
+
+.detail-scan p {
+	color: white;
+	font-style: italic;
+}
+
+.detail-scan a {
+	margin-top: 80px;
+	font-size: 10px;
+}
+
+.detail-scan-info {
+	box-shadow: 0px 16px 20px #3EACE266;	
+}
+
+.detail-info-video video {
+	width: 100%;
+	height: auto;
+}
+
+.detail-info {
+  	position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.detail-info {
+	padding: 2rem;
+}
+
+.detail-info-text {
+	margin-bottom: 20px;
+}
+
+
+/* Present */
+.wrapper-detail-present{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	text-align: center;
+
+}
+.detail-present-bg {
+	width: 120%;
+	background: transparent linear-gradient(109deg, #55ECB2 0%, #2DD393 100%) 0% 0% no-repeat padding-box;
+	box-shadow: 0px 16px 20px #aef2d8;
+}
+
+.detail-present-info {
+	box-shadow: 0px 16px 20px #aef2d8;	
+}
+
+.detail-present img {
+	width: 200px;
+	padding: 30px;
+	border-radius: 50%;
+}
+
+.detail-present h6 {
+	font-size: 12px;
+}
+
+
+.detail-info-camera #camera {
+	width: 100%;
+	height: auto;
+}
+
+.detail-info-camera {
+	position: relative;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.wrapper-scan {
+		padding: 20px;
+	}
+
+	.detail-scan img {
+		width: 100px;
+		padding: 15px;
+	}
+
+	.detail-scan h2 {
+		font-size: 15px;
+	}
+
+	.detail-info-text {
+		font-size: 10px;
+	}
+	
+	.detail-scan a {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	.detail-scan-info {
+		margin: 0;
+	}
+
+	.detail-info {
+		padding: 0;
+	}
+
+	.detail-info-text {
+		margin-top: 20px;
+	}
+
+
+	/* Present */
+
+	.widget-user-username {
+		font-size: 16px;
+	}
+
+	.description-header {
+		font-size: 12px;
+	}
+
+	.description-text {
+		font-size: 12px;
+	}
+
+	.detail-present button {
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	.detail-present button.buttons-foot {
+		margin-bottom: 10px;
+	}
+
+	.detail-present .border-right {
+		border-bottom: 20px;
+		border-color: white;
+	}
+
+}
