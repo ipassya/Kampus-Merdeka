@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 19 Jun 2021 pada 12.51
+-- Waktu pembuatan: 19 Jun 2021 pada 19.35
 -- Versi server: 10.4.18-MariaDB
 -- Versi PHP: 7.4.16
 
@@ -32,16 +32,16 @@ CREATE TABLE `tb_students` (
   `email` varchar(128) NOT NULL,
   `name` varchar(128) NOT NULL,
   `major` varchar(128) NOT NULL,
-  `university` varchar(128) NOT NULL,
-  `photo` varchar(128) NOT NULL
+  `university` varchar(128) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `tb_students`
 --
 
-INSERT INTO `tb_students` (`nim`, `email`, `name`, `major`, `university`, `photo`) VALUES
-('123189999', 'celvin@gmail.com', 'Celvin', 'Information Systems', 'Oxford', '123');
+INSERT INTO `tb_students` (`nim`, `email`, `name`, `major`, `university`) VALUES
+('123189999', 'celvin@gmail.com', 'Celvin', 'Information Systems', 'Oxford'),
+('1236666', 'elon@gmail.com', 'Elon', 'Computer Science', 'Oxford');
 
 --
 -- Indexes for dumped tables
