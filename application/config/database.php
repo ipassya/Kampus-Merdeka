@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'kampus-merdeka_user_db',
+	'username' => 'ekky24',
+	'password' => 'ekky',
 	'database' => 'db_upn',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -97,9 +97,9 @@ $db['default'] = array(
 
 $db['oxford'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => 'kampus-merdeka_oxford_db',
+	'username' => 'ekky24',
+	'password' => 'ekky',
 	'database' => 'db_oxford',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

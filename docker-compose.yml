@@ -1,0 +1,50 @@
+version: "3.9"  
+services:   
+ upn_db:     
+   container_name: kampus-merdeka_user_db
+   image: mysql:8.0     
+   restart: always     
+   command: --default-authentication-plugin=mysql_native_password     
+   volumes:       
+      - upn_volume:/var/lib/mysql     
+   environment:       
+     MYSQL_ROOT_PASSWORD: ekky       
+     MYSQL_DATABASE: db_upn       
+     MYSQL_USER: ekky24       
+     MYSQL_PASSWORD: ekky     
+     networks:       
+      - project_network    
+ 
+ oxford_db:
+   container_name: kampus-merdeka_oxford_db     
+   image: mysql:8.0     
+   restart: always     
+   command: --default-authentication-plugin=mysql_native_password     
+   volumes:       
+      - oxford_volume:/var/lib/mysql     
+   environment:       
+      MYSQL_ROOT_PASSWORD: ekky       
+      MYSQL_DATABASE: db_oxford       
+      MYSQL_USER: ekky24       
+      MYSQL_PASSWORD: ekky     
+   networks:       
+     - project_network    
+   
+   project_app:     
+     container_name: kampus-merdeka_project_app
+     build: .     
+     restart: always     
+     depends_on:       
+      - upn_db       
+      - oxford_db     
+     networks:       
+      - project_network     
+     ports:       
+      - "8000:80"  
+
+networks:   
+ project_network:  
+
+volumes:   
+ upn_volume:   
+ oxford_volume:
