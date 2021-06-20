@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'kampus-merdeka_user_db',
+	'hostname' => 'kampus-merdeka_upn_db',
 	'username' => 'ekky24',
 	'password' => 'ekky',
 	'database' => 'db_upn',
